@@ -26,10 +26,10 @@ class Directors extends React.Component {
 
   handleChange = name => ({ target }) => { this.setState({ [name]: target.value }); };
 
+
   render() {
     const { name, age, id, open } = this.state;
     const { classes } = this.props;
-
     return (
       <>
         <DirectorsForm handleChange={this.handleChange} selectedValue={{ name, age, id }} open={open} onClose={this.handleClose} />
